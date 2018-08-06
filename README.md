@@ -12,9 +12,9 @@ learning about spring rest api
 Load app at `http://localhost:8080`
 
 ## Routes:
-GET `http://localhost:8080` - home
-GET `http://localhost:8080/blog` - list all blogs
-GET `http://localhost:8080/blog/:id` - list blog with id
+- GET `http://localhost:8080` - home
+- GET `http://localhost:8080/blog` - list all blogs
+- GET `http://localhost:8080/blog/:id` - list blog with id
 
 
 # Credit
