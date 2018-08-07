@@ -8,11 +8,11 @@
 - `mvn clean spring-boot:run` to launch the app at `localhost:8000`
 
 ## Endpoints
-`/save` - will populate the DynamoDB with example entities
-`/delete` - will clear example entities
-`/customer` - retrieve all example entities as JSON
-`/customer/id` - get a single record by id
-`/findbyfirstname?firstname=:firstname` - get a collection of all entities by name
+- `/save` - will populate the DynamoDB with example entities
+- `/delete` - will clear example entities
+- `/customer` - retrieve all example entities as JSON
+- `/customer/id` - get a single record by id
+- `/findbyfirstname?firstname=:firstname` - get a collection of all entities by name
 
 ## Reference
 - https://grokonez.com/spring-framework/spring-data/how-to-use-spring-data-dynamodb-example-spring-boot
