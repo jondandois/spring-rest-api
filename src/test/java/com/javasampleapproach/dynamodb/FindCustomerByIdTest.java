@@ -26,17 +26,17 @@ public class FindCustomerByIdTest extends SpringDataDynamoDbApplicationTests {
 
   @Test
   public void validate_findCustomerById_status() throws Exception {
-    mockMvc.perform(get("/findbyid?id=1"))
+    mockMvc.perform(get("/customer/1"))
       .andExpect(status().isOk());
   }
   @Test
   public void validate_findCustomerById_header() throws Exception {
-    mockMvc.perform(get("/findbyid?id=1"))
+    mockMvc.perform(get("/customer/1"))
       .andExpect(content().contentType("application/json;charset=UTF-8"));
   }
   @Test
   public void validate_findCustomerById_content() throws Exception {
-    mockMvc.perform(get("/findbyid?id=1"))
+    mockMvc.perform(get("/customer/1"))
       .andExpect(jsonPath("$.firstName").value("Jack"));
   }
 }

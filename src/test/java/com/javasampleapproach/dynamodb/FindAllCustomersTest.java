@@ -26,11 +26,11 @@ public class FindAllCustomersTest extends SpringDataDynamoDbApplicationTests {
 
   @Test
   public void validate_findAllCustomers_status() throws Exception {
-    mockMvc.perform(get("/findall")).andExpect(status().isOk());
+    mockMvc.perform(get("/customer")).andExpect(status().isOk());
     // .andExpect(jsonPath("$.name").value("John")).andExpect(jsonPath("$.location").value("US"));
   }
   @Test
   public void validate_findAllCustomers_header() throws Exception {
-    mockMvc.perform(get("/findall")).andExpect(content().contentType("application/json;charset=UTF-8"));
+    mockMvc.perform(get("/customer")).andExpect(content().contentType("application/json;charset=UTF-8"));
   }
 }

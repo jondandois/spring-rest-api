@@ -10,8 +10,8 @@
 ## Endpoints
 `/save` - will populate the DynamoDB with example entities
 `/delete` - will clear example entities
-`/findall` - retrieve all example entities as JSON
-`/findbyid?id=:id` - get a single record by id
+`/customer` - retrieve all example entities as JSON
+`/customer/id` - get a single record by id
 `/findbyfirstname?firstname=:firstname` - get a collection of all entities by name
 
 ## Reference

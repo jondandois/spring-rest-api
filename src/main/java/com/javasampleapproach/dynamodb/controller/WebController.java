@@ -37,13 +37,13 @@ public class WebController {
 		return "Done";
 	}
 
-	@RequestMapping("/findall")
+	@RequestMapping("/customer")
 	public Iterable<Customer> findAll() {
 		return repository.findAll();
 	}
 
-	@RequestMapping("/findbyid")
-	public Customer findById(@RequestParam("id") String id) {
+	@RequestMapping("/customer/{id}")
+	public Customer findById(@PathVariable("id") String id) {
 		return repository.findOne(id);
 	}
 
